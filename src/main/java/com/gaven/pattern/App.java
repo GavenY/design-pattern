@@ -9,18 +9,21 @@ public class App
     public static void main( String[] args )
     {
 
-        String cName = "com.gaven.pattern.FactoryTest.FactoryMethod.HorseFarm";
+        StringBuffer a = new StringBuffer("abc");
+        StringBuffer b = new StringBuffer("abc");
 
-        try {
-            Class<?> c = Class.forName(cName);
-            Object obj=c.newInstance();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        }
+        String e = new String("asd");
+        String f = new String("asd");
+
+        System.out.println(e==f);
+
+        Integer c=128,d=128;
+
+        System.out.println(c==d);//false
+        System.out.println(c.equals(d));//true
+
+        System.out.println(a==b);//false
+        System.out.println(a.equals(b));//false
 
         System.out.println( "Hello World!" );
     }

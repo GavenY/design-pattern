@@ -1,0 +1,13 @@
+package com.gaven.pattern.SingletonTest.SingletonHungry;
+
+public class HungryStaticSingleton {
+
+    private static final HungryStaticSingleton hungrySingleton;
+    static {
+        hungrySingleton = new HungryStaticSingleton();
+    }
+    private HungryStaticSingleton(){}
+    public static HungryStaticSingleton getInstance(){
+        return  hungrySingleton;
+    }
+}
