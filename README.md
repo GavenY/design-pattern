@@ -1,9 +1,19 @@
 # design-pattern
 
-工厂模式：
-简单工厂：只能生产单一产品，增加产品时需修改工厂源码，违背开闭原则
-工厂方法：符合开闭原则，每增加一个产品（同等级），只需增加一个对应工厂的实现类，产品类就可以了，不必修改源码
-抽象工厂：抽象工厂模式是工厂方法模式的升级版本，工厂方法模式只生产一个等级的产品，而抽象工厂模式可生产多个等级的产品，当增加一个新的产品族时只需增加一个新的具体工厂，不需要修改原代码，满足开闭原则。
-当产品族中需要增加一个新种类的产品时，则所有的工厂类都需要进行修改，不满足开闭原则
+##简单实现源码
+每种模式用各自名字的文件夹存放
 
-产品族与产品等级区别：产品族是一个厂生产的产品集合，产品等级是不同厂生产同一种产品
+[https://github.com/YJWGitHubAcc/design-pattern/tree/master/src/main/java/com/gaven/pattern](https://github.com/YJWGitHubAcc/design-pattern/tree/master/src/main/java/com/gaven/pattern "源码路径")
+
+
+----
+
+##类图时序图
+每种模式用各自名字的文件夹存放
+
+[https://github.com/YJWGitHubAcc/design-pattern/tree/master/uxf](https://github.com/YJWGitHubAcc/design-pattern/tree/master/uxf "类图")
+
+## 总结
+每种模式用各自名字的文件夹存放
+
+[https://github.com/YJWGitHubAcc/design-pattern/tree/master/md](https://github.com/YJWGitHubAcc/design-pattern/tree/master/md "总结")
